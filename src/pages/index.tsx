@@ -13,6 +13,15 @@ import SearchItem from "@/components/SearchItem"
 import Slider from "@/components/Slider"
 
 const Home: NextPage = () => {
+  const serviceArr = [
+    { title: "浮気調査", src: "/img/uwaki.jpg" },
+    { title: "結婚調査", src: "/img/wedding.jpg" },
+    { title: "素行調査", src: "/img/soko.jpg" },
+    { title: "いじめ調査", src: "/img/ijime.jpg" },
+    { title: "ストーカー調査", src: "/img/sutoka.jpg" },
+    { title: "ペット調査", src: "/img/petto.jpg" },
+  ]
+
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
       <Head>
@@ -64,12 +73,7 @@ const Home: NextPage = () => {
           <section className="my-16">
             <H2title title="調査内容" />
             <div className="grid-cols-2 gap-8 md:grid">
-              <SearchItem title="浮気調査" src="/img/uwaki.jpg" />
-              <SearchItem title="結婚調査" src="/img/wedding.jpg" />
-              <SearchItem title="素行調査" src="/img/soko.jpg" />
-              <SearchItem title="いじめ調査" src="/img/ijime.jpg" />
-              <SearchItem title="ストーカー調査" src="/img/sutoka.jpg" />
-              <SearchItem title="ペット調査" src="/img/petto.jpg" />
+              {serviceArr.map((item, i) => <SearchItem key={i} title={item.title} src={item.src} />)}
             </div>
           </section>
 

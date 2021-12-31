@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const CtaBlock = () => {
   return (
-    <div className="p-5 my-8 w-full bg-white rounded border shadow-md">
+    <div className="p-5 mt-20 mb-8 w-full bg-white rounded border shadow-md">
       <div className="md:flex">
         <div className="md:w-1/2">
           <Image src="/img/otoiawase.jpg" alt="" width={800} height={600} />

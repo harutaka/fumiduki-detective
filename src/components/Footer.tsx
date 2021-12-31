@@ -35,7 +35,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <div className="justify-center my-8 mx-auto md:flex">
+        <div className="my-8 mx-auto md:flex md:justify-around">
           <div className="p-4 md:p-0 md:w-1/3">
             <Image src="/img/tanteilogo.png" alt="文月探偵事務所" width={250} height={60} />
             <div className="my-4 text-sm">

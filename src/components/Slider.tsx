@@ -34,7 +34,7 @@ const Slider = () => {
         {slideImgArr.map((item, i) => {
           return (
             <SwiperSlide key={i}>
-              <div className="relative text-[0px] bg-gray-800">
+              <div className="relative text-[0px] tracking-[0px] leading-[0px] bg-gray-800">
                 <Image src={item.src} alt="" width={1900} height={600} className={item.className} />
                 <div className="flex absolute top-0 bottom-0 justify-center items-center w-full text-lg font-bold tracking-widest leading-normal text-white md:text-3xl">
                   {`${item.message}`}

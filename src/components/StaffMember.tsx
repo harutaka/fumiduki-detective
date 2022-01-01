@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link"
 
 type StaffMemberProps = {
   name: string
@@ -8,15 +7,15 @@ type StaffMemberProps = {
 }
 const StaffMember = ({ name, src, role }: StaffMemberProps) => {
   return (
-    <div className="flex my-8 space-x-12">
-      <div className="w-1/3">
-        <div className="border-4 border-gray-200">
+    <div className="my-8 md:flex md:space-x-12">
+      <div className="md:w-1/3">
+        <div className="leading-[0px] border-4 border-gray-200">
           <Image src={src} alt={name} width={600} height={600} />
         </div>
       </div>
 
-      <div className="w-2/3">
-        <h3 className="font-serif text-3xl font-bold text-blue-800 md:text-5xl">{name}</h3>
+      <div className="md:w-2/3">
+        <h3 className="pt-4 font-serif text-3xl font-bold text-blue-800 md:pt-0 md:text-5xl">{name}</h3>
         <p className="my-2 text-sm">{role}</p>
 
         <hr className="my-4 border-gray-300" />

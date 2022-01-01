@@ -24,6 +24,7 @@ const Slider = () => {
       <Swiper
         id="swiper"
         modules={[Navigation, Pagination, A11y]}
+        loop={true}
         spaceBetween={50}
         slidesPerView={1}
         navigation

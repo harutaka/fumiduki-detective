@@ -50,9 +50,9 @@ const Footer = () => {
             <div className="-mt-4 w-full border-b border-gray-300">
               <h4 className="inline-block py-2 text-lg font-bold border-b border-black">セミナー情報</h4>
             </div>
-            <SeminarItem href="#" title="「浮気の予防セミナー」実施のお知らせ" />
-            <SeminarItem href="#" title="当事務所が新聞で紹介されました" />
-            <SeminarItem href="#" title="夏季休業のお知らせ" />
+            <SeminarItem href="/seminar/s01" title="「浮気の予防セミナー」実施のお知らせ" />
+            <SeminarItem href="/seminar/s02" title="個人でできる防犯対策" />
+            <SeminarItem href="/seminar/s03" title="探偵入門セミナー（終了）" />
           </div>
         </div>
 

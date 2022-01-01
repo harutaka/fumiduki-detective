@@ -63,9 +63,9 @@ const Home: NextPage = () => {
 
           <section className="my-16">
             <H2title title="インフォメーション" />
-            <InfomationLink href="#" title="「浮気の予防セミナー」実施のお知らせ" />
-            <InfomationLink href="#" title="当事務所が新聞で紹介されました" />
-            <InfomationLink href="#" title="夏季休業のお知らせ" />
+            <InfomationLink href="/seminar/s01" title="「浮気の予防セミナー」実施のお知らせ" />
+            <InfomationLink href="/seminar/s02" title="当事務所が新聞で紹介されました" />
+            <InfomationLink href="/seminar/s03" title="夏季休業のお知らせ" />
           </section>
 
           <CoverImage className="bg-img-intermiddle01" />

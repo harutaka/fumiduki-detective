@@ -28,11 +28,14 @@ const Home: NextPage = () => {
         <title>文月探偵事務所 - 浮気調査や素行調査等</title>
         <meta name="description" content="浮気調査や素行調査等" />
         <meta property="og:title" content="文月探偵事務所" />
+        <meta property="og:url" content="https://fumiduki-detective.vercel.app/" />
         <meta property="og:description" content="浮気調査や素行調査等" />
-        <meta name="twitter:card" content="summary" />
+        <meta property="og:image" content="https://fumiduki-detective.vercel.app/detective_overview.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
         <link rel="icon" href="/logo-32x32.png" sizes="32x32" />
         <link rel="icon" href="/logo-192x192.png" sizes="192x192" />
         <link rel="apple-touch-icon" href="/logo-180x180.png" />
+        <link rel="canonical" href="https://fumiduki-detective.vercel.app/" />
       </Head>
 
       <Header current="/" />
@@ -73,7 +76,9 @@ const Home: NextPage = () => {
           <section className="my-16">
             <H2title title="調査内容" />
             <div className="grid-cols-2 gap-8 md:grid">
-              {serviceArr.map((item, i) => <SearchItem key={i} title={item.title} src={item.src} />)}
+              {serviceArr.map((item, i) => (
+                <SearchItem key={i} title={item.title} src={item.src} />
+              ))}
             </div>
           </section>
 

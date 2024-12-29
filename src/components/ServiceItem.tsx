@@ -1,9 +1,9 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import H2title from "@/components/H2title"
 
 type ServiceItemProps = {
   title: string
-  src: string
+  src: StaticImageData
 }
 const ServiceItem = ({ title, src }: ServiceItemProps) => {
   return (

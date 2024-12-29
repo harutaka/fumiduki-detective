@@ -1,12 +1,14 @@
 import Image from "next/image"
 
+import honsyaImg from "@/../public/img/honsya.jpg"
+
 const Office = () => {
   const tdAttrClass = "py-3 px-4 font-bold"
   const tdDescClass = "py-3 px-4 text-sm"
   return (
     <div className="w-full">
       <div className="my-16 w-full text-center">
-        <Image src="/img/honsya.jpg" alt="" width={600} height={450} />
+        <Image src={honsyaImg} alt="" width={600} height={450} />
       </div>
 
       <div className="overflow-auto mx-auto w-full">

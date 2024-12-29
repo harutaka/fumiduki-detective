@@ -1,8 +1,8 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 
 type StaffMemberProps = {
   name: string
-  src: string
+  src: StaticImageData
   role: string
 }
 const StaffMember = ({ name, src, role }: StaffMemberProps) => {

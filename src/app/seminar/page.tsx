@@ -1,16 +1,20 @@
 import type { NextPage } from "next"
-import Head from "next/head"
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import Breadcrumb from "@/components/Breadcrumb"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import PageHeader from "@/components/PageHeader"
 
+import seminar01Img from "@/../public/img/hide02.jpg"
+import seminar02Img from "@/../public/img/rina06.jpg"
+import seminar03Img from "@/../public/img/yusuke02.jpg"
+
+
 type SeminarItemProps = {
   title: string
   date: string
-  src: string
+  src: StaticImageData
   href: string
 }
 const SeminarItem = ({ title, date, src, href }: SeminarItemProps) => {
@@ -49,16 +53,6 @@ const SeminarItem = ({ title, date, src, href }: SeminarItemProps) => {
 const Seminar: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-      <Head>
-        <title>セミナー情報 - 文月探偵事務所</title>
-        <meta name="description" content="セミナー情報です" />
-        <meta property="og:title" content="セミナー情報" />
-        <meta property="og:description" content="セミナー情報です" />
-        <meta name="twitter:card" content="summary" />
-        <link rel="icon" href="/logo-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/logo-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/logo-180x180.png" />
-      </Head>
 
       <Header current="/seminar" />
       <PageHeader title="セミナー情報" />
@@ -68,13 +62,13 @@ const Seminar: NextPage = () => {
         {/* site-container */}
         <div className="relative px-4 pt-12 mx-auto w-full max-w-6xl">
           <div className="border-b border-gray-200"></div>
-          <SeminarItem title="浮気の予防セミナー" date="2021年10月27日" href="/seminar/s01" src="/img/hide02.jpg" />
-          <SeminarItem title="個人でできる防犯対策" date="2021年9月19日" href="/seminar/s02" src="/img/rina06.jpg" />
+          <SeminarItem title="浮気の予防セミナー" date="2021年10月27日" href="/seminar/s01" src={seminar01Img} />
+          <SeminarItem title="個人でできる防犯対策" date="2021年9月19日" href="/seminar/s02" src={seminar02Img} />
           <SeminarItem
             title="探偵入門セミナー（終了）"
             date="2021年8月11日"
             href="/seminar/s03"
-            src="/img/yusuke02.jpg"
+            src={seminar03Img}
           />
         </div>
       </main>

@@ -1,5 +1,4 @@
 import type { NextPage } from "next"
-import Head from "next/head"
 import Breadcrumb from "@/components/Breadcrumb"
 import Footer from "@/components/Footer"
 import H2title from "@/components/H2title"
@@ -9,19 +8,6 @@ import PageHeader from "@/components/PageHeader"
 const Contact: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-      <Head>
-        <title>お問い合わせ - 文月探偵事務所</title>
-        <meta name="description" content="お問い合わせはお電話、またはこちらのメールフォームにてお願いします。" />
-        <meta property="og:title" content="お問い合わせ" />
-        <meta
-          property="og:description"
-          content="お問い合わせはお電話、またはこちらのメールフォームにてお願いします。"
-        />
-        <meta name="twitter:card" content="summary" />
-        <link rel="icon" href="/logo-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/logo-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/logo-180x180.png" />
-      </Head>
 
       <Header current="/contact" />
       <PageHeader title="お問い合わせ" />

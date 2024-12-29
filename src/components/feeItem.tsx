@@ -1,4 +1,3 @@
-import Image from "next/image"
 import H2title from "@/components/H2title"
 
 type FeeItemProps = {

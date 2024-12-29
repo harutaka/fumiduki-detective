@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import tanteiLogo from "@/../public/img/tanteilogo.png"
+
 type SeminarItemProps = {
   href: string
   title: string
@@ -37,7 +39,7 @@ const Footer = () => {
 
         <div className="my-8 mx-auto md:flex md:justify-around">
           <div className="p-4 md:p-0 md:w-1/3">
-            <Image src="/img/tanteilogo.png" alt="文月探偵事務所" width={250} height={60} />
+            <Image src={tanteiLogo} alt="文月探偵事務所" width={250} height={60} />
             <div className="my-4 text-sm">
               <p>郵便番号：〒000-0000</p>
               <p>住所：大阪府大阪市○○○○1-1-1</p>
@@ -56,7 +58,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="pt-4 text-xs text-center">&copy; 2021 Harutaka</div>
+        <div className="pt-4 text-xs text-center">&copy; 2024 Harutaka</div>
       </div>
     </footer>
   )

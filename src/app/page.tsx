@@ -1,5 +1,4 @@
 import type { NextPage } from "next"
-import Head from "next/head"
 import CoverImage from "@/components/CoverImage"
 import CtaBlock from "@/components/CtaBlock"
 import Feature from "@/components/Feature"
@@ -12,31 +11,11 @@ import QaItem from "@/components/QaItem"
 import SearchItem from "@/components/SearchItem"
 import Slider from "@/components/Slider"
 
-const Home: NextPage = () => {
-  const serviceArr = [
-    { title: "浮気調査", src: "/img/uwaki.jpg" },
-    { title: "結婚調査", src: "/img/wedding.jpg" },
-    { title: "素行調査", src: "/img/soko.jpg" },
-    { title: "いじめ調査", src: "/img/ijime.jpg" },
-    { title: "ストーカー調査", src: "/img/sutoka.jpg" },
-    { title: "ペット調査", src: "/img/petto.jpg" },
-  ]
+import availableService from "@/shared/availableService"
 
+const Home: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-      <Head>
-        <title>文月探偵事務所 - 浮気調査や素行調査等</title>
-        <meta name="description" content="浮気調査や素行調査等" />
-        <meta property="og:title" content="文月探偵事務所" />
-        <meta property="og:url" content="https://fumiduki-detective.vercel.app/" />
-        <meta property="og:description" content="浮気調査や素行調査等" />
-        <meta property="og:image" content="https://fumiduki-detective.vercel.app/detective_overview.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" href="/logo-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/logo-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/logo-180x180.png" />
-        <link rel="canonical" href="https://fumiduki-detective.vercel.app/" />
-      </Head>
 
       <Header current="/" />
       <Slider />
@@ -76,7 +55,7 @@ const Home: NextPage = () => {
           <section className="my-16">
             <H2title title="調査内容" />
             <div className="grid-cols-2 gap-8 md:grid">
-              {serviceArr.map((item, i) => (
+              {availableService.map((item, i) => (
                 <SearchItem key={i} title={item.title} src={item.src} />
               ))}
             </div>

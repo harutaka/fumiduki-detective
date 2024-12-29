@@ -1,4 +1,3 @@
-import Head from "next/head"
 import CtaBlock from "./CtaBlock"
 import Breadcrumb from "@/components/Breadcrumb"
 import Footer from "@/components/Footer"
@@ -59,16 +58,6 @@ type SeminarPageProps = {
 const SeminarPage = ({ title, postDate, openDate, isFinished }: SeminarPageProps) => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-      <Head>
-        <title>{title} - 文月探偵事務所</title>
-        <meta name="description" content={title} />
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={title} />
-        <meta name="twitter:card" content="summary" />
-        <link rel="icon" href="/logo-32x32.png" sizes="32x32" />
-        <link rel="icon" href="/logo-192x192.png" sizes="192x192" />
-        <link rel="apple-touch-icon" href="/logo-180x180.png" />
-      </Head>
 
       <Header current="/seminar/xxx" />
       <PageHeader title="セミナー情報" />

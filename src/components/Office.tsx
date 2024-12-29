@@ -65,6 +65,7 @@ const Office = () => {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6561.836948848546!2d135.49883!3d34.682007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x41606f98435e0ac!2z5pys55S66aeF!5e0!3m2!1sja!2sjp!4v1640934752318!5m2!1sja!2sjp"
           allowFullScreen
+          title="Google Map of fumiduki detective agency"
           loading="lazy"
           className="w-full min-h-[450px]"
         ></iframe>

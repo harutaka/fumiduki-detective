@@ -31,8 +31,6 @@ const Slider = () => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
       >
         {slideImgArr.map((item, i) => {
           return (

@@ -13,7 +13,6 @@ import rinaImg from "@/../public/img/rina05.jpg"
 const Staff: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-
       <Header current="/staff" />
       <PageHeader title="スタッフ紹介" />
       <Breadcrumb breadcrumb={[{ href: "", title: "スタッフ紹介" }]} />

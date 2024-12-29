@@ -24,8 +24,8 @@ const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
           {breadcrumbArr.map((item, i) => (
             <li key={i} className={`inline`}>
               {item.href ? (
-                <Link href={item.href}>
-                  <a className="after:mx-2 after:content-['/']">{item.title}</a>
+                <Link href={item.href} className="after:mx-2 after:content-['/']">
+                  {item.title}
                 </Link>
               ) : (
                 <span>{item.title}</span>

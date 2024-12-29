@@ -58,7 +58,6 @@ type SeminarPageProps = {
 const SeminarPage = ({ title, postDate, openDate, isFinished }: SeminarPageProps) => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-
       <Header current="/seminar/xxx" />
       <PageHeader title="セミナー情報" />
       <Breadcrumb

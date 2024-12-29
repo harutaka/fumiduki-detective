@@ -8,7 +8,6 @@ import PageHeader from "@/components/PageHeader"
 const Contact: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-
       <Header current="/contact" />
       <PageHeader title="お問い合わせ" />
       <Breadcrumb breadcrumb={[{ href: "", title: "お問い合わせ" }]} />

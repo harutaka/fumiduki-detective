@@ -7,8 +7,8 @@ type InfomationLinkProps = {
 const InfomationLink = ({ href, title }: InfomationLinkProps) => {
   return (
     <div className="py-4 w-full border-b border-gray-300">
-      <Link href={href}>
-        <a className="hover:underline">{title}</a>
+      <Link href={href} className="hover:underline">
+        {title}
       </Link>
     </div>
   )

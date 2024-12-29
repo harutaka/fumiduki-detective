@@ -1,4 +1,4 @@
-'use client'
+"use client"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -50,9 +50,7 @@ const Header = ({ current }: HeaderProps) => {
         <h1 className={`text-2xl whitespace-nowrap md:my-4 md:mr-8 md:w-full md:text-left ${scroll ? "hidden" : ""}`}>
           <div className="max-h-16 text-center">
             <Link href="/">
-              <a>
-                <Image src="/img/tanteilogo.png" alt="文月探偵事務所" width={250} height={60} />
-              </a>
+              <Image src="/img/tanteilogo.png" alt="文月探偵事務所" width={250} height={60} />
             </Link>
           </div>
         </h1>
@@ -70,10 +68,11 @@ const Header = ({ current }: HeaderProps) => {
                     current === item.href ? "before:w-full" : ""
                   }`}
                 >
-                  <Link href={item.href}>
-                    <a className="flex overflow-hidden relative flex-wrap justify-center items-center p-4 text-center md:py-3.5 md:px-2 lg:px-6">
-                      <strong className="block w-full text-sm whitespace-nowrap">{item.title}</strong>
-                    </a>
+                  <Link
+                    href={item.href}
+                    className="flex overflow-hidden relative flex-wrap justify-center items-center p-4 text-center md:py-3.5 md:px-2 lg:px-6"
+                  >
+                    <strong className="block w-full text-sm whitespace-nowrap">{item.title}</strong>
                   </Link>
                 </div>
               </li>
@@ -81,26 +80,23 @@ const Header = ({ current }: HeaderProps) => {
           </ul>
         </nav>
       </div>
-
       {/* 右下にtopに戻るボタン */}
-      <Link href="#top">
-        <a
-          className={`${
-            scroll ? "opacity-100" : "opacity-0"
-          } transition-opacity fixed right-[2%] bottom-[3%] z-50 w-10 h-10 bg-gray-700 text-gray-300 ring-1 ring-offset-1 ring-gray-700 flex justify-center items-center`}
+      <Link
+        href="#top"
+        className={`${
+          scroll ? "opacity-100" : "opacity-0"
+        } transition-opacity fixed right-[2%] bottom-[3%] z-50 w-10 h-10 bg-gray-700 text-gray-300 ring-1 ring-offset-1 ring-gray-700 flex justify-center items-center`}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="w-5 h-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-          </svg>
-        </a>
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+        </svg>
       </Link>
-
       {/* モバイルの場合は左上にメニューアイコン固定 */}
       <button
         onClick={() => setOpen((open) => !open)}
@@ -108,7 +104,6 @@ const Header = ({ current }: HeaderProps) => {
       >
         {open ? closeIcon() : menuIcon()}
       </button>
-
       {/* メニュー */}
       <div
         className={`fixed bg-white z-10 w-full h-full py-12 px-2.5 transition-all duration-500 ${
@@ -119,8 +114,8 @@ const Header = ({ current }: HeaderProps) => {
           <ul className="text-sm border-t border-gray-300">
             {menuArr.map((item, i) => (
               <li key={i} className="">
-                <Link href={item.href}>
-                  <a className="block py-3 px-2 w-full border-b border-gray-300">{item.title}</a>
+                <Link href={item.href} className="block py-3 px-2 w-full border-b border-gray-300">
+                  {item.title}
                 </Link>
               </li>
             ))}

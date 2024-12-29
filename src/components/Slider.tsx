@@ -1,7 +1,7 @@
-'use client'
+"use client"
 
-import { Navigation, Pagination, A11y } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, A11y } from "swiper/modules"
+import { Swiper, SwiperSlide } from "swiper/react"
 import Image from "next/image"
 
 import "swiper/css"

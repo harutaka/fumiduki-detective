@@ -16,7 +16,6 @@ import availableService from "@/shared/availableService"
 const Home: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-
       <Header current="/" />
       <Slider />
 

@@ -14,8 +14,8 @@ const SeminarItem = ({ href, title }: SeminarItemProps) => {
         2021年7月27日<span className="inline-block px-1 mx-2 text-[10px] text-white bg-gray-600">Infomation</span>
       </div>
       <p>
-        <Link href={href}>
-          <a className="hover:underline">{title}</a>
+        <Link href={href} className="hover:underline">
+          {title}
         </Link>
       </p>
     </div>
@@ -29,11 +29,9 @@ const Footer = () => {
       <div className="mx-auto w-full max-w-6xl md:px-14">
         <div className="w-full border-b border-gray-200">
           <Link href="/policy">
-            <a>
-              <div className="inline-block px-8 my-2 text-xs hover:underline border-r border-l border-gray-200">
-                プライバシーポリシー
-              </div>
-            </a>
+            <div className="inline-block px-8 my-2 text-xs hover:underline border-r border-l border-gray-200">
+              プライバシーポリシー
+            </div>
           </Link>
         </div>
 

@@ -12,7 +12,6 @@ import availableService from "@/shared/availableService"
 const Service: NextPage = () => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
-
       <Header current="/service" />
       <PageHeader title="業務内容" />
       <Breadcrumb breadcrumb={[{ href: "", title: "業務内容" }]} />

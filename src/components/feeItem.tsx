@@ -12,22 +12,24 @@ const FeeItem = ({ title }: FeeItemProps) => {
       <H2title title={title} />
 
       <table className="w-full text-left border border-gray-300 table-auto">
-        <tr className="bg-gray-200">
-          <td className={tdAttrClass}>項目名</td>
-          <td className={tdDescClass}>これはダミーテキストです。</td>
-        </tr>
-        <tr className="">
-          <td className={tdAttrClass}>項目名</td>
-          <td className={tdDescClass}>これはダミーテキストです。</td>
-        </tr>
-        <tr className="bg-gray-200">
-          <td className={tdAttrClass}>項目名</td>
-          <td className={tdDescClass}>これはダミーテキストです。</td>
-        </tr>
-        <tr className="">
-          <td className={tdAttrClass}>項目名</td>
-          <td className={tdDescClass}>これはダミーテキストです。</td>
-        </tr>
+        <tbody>
+          <tr className="bg-gray-200">
+            <td className={tdAttrClass}>項目名</td>
+            <td className={tdDescClass}>これはダミーテキストです。</td>
+          </tr>
+          <tr className="">
+            <td className={tdAttrClass}>項目名</td>
+            <td className={tdDescClass}>これはダミーテキストです。</td>
+          </tr>
+          <tr className="bg-gray-200">
+            <td className={tdAttrClass}>項目名</td>
+            <td className={tdDescClass}>これはダミーテキストです。</td>
+          </tr>
+          <tr className="">
+            <td className={tdAttrClass}>項目名</td>
+            <td className={tdDescClass}>これはダミーテキストです。</td>
+          </tr>
+        </tbody>
       </table>
     </div>
   )

@@ -9,7 +9,7 @@ const ServiceItem = ({ title, src }: ServiceItemProps) => {
   return (
     <>
       <H2title title={title} />
-      <div className="my-4 text-center">
+      <div className="my-4 flex justify-center">
         <Image src={src} alt={title} width={800} height={600} />
       </div>
 

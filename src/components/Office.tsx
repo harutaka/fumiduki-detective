@@ -7,48 +7,50 @@ const Office = () => {
   const tdDescClass = "py-3 px-4 text-sm"
   return (
     <div className="w-full">
-      <div className="my-16 w-full text-center">
+      <div className="my-16 w-full flex justify-center">
         <Image src={honsyaImg} alt="" width={600} height={450} />
       </div>
 
       <div className="overflow-auto mx-auto w-full">
         <table className="w-full text-left table-auto">
-          <tr className="bg-gray-200">
-            <td className={tdAttrClass}>事務所名</td>
-            <td className={tdDescClass}>
-              文月探偵事務所
-              <br />
-              Fumiduki Detective Agency
-            </td>
-          </tr>
-          <tr className="">
-            <td className={tdAttrClass}>住所</td>
-            <td className={tdDescClass}>
-              〒000-0000
-              <br />
-              大阪府大阪市〇〇〇〇1-1-1
-            </td>
-          </tr>
-          <tr className="bg-gray-200">
-            <td className={tdAttrClass}>TEL</td>
-            <td className={tdDescClass}>000-000-0000</td>
-          </tr>
-          <tr className="">
-            <td className={tdAttrClass}>FAX</td>
-            <td className={tdDescClass}>000-000-0000</td>
-          </tr>
-          <tr className="bg-gray-200">
-            <td className={tdAttrClass}>受付時間</td>
-            <td className={tdDescClass}>09:00-20:00</td>
-          </tr>
-          <tr className="">
-            <td className={tdAttrClass}>定休日</td>
-            <td className={tdDescClass}>土曜・日曜・祝日</td>
-          </tr>
-          <tr className="bg-gray-200">
-            <td className={tdAttrClass}>駐車場</td>
-            <td className={tdDescClass}>4台まで駐車可</td>
-          </tr>
+          <tbody>
+            <tr className="bg-gray-200">
+              <td className={tdAttrClass}>事務所名</td>
+              <td className={tdDescClass}>
+                文月探偵事務所
+                <br />
+                Fumiduki Detective Agency
+              </td>
+            </tr>
+            <tr className="">
+              <td className={tdAttrClass}>住所</td>
+              <td className={tdDescClass}>
+                〒000-0000
+                <br />
+                大阪府大阪市〇〇〇〇1-1-1
+              </td>
+            </tr>
+            <tr className="bg-gray-200">
+              <td className={tdAttrClass}>TEL</td>
+              <td className={tdDescClass}>000-000-0000</td>
+            </tr>
+            <tr className="">
+              <td className={tdAttrClass}>FAX</td>
+              <td className={tdDescClass}>000-000-0000</td>
+            </tr>
+            <tr className="bg-gray-200">
+              <td className={tdAttrClass}>受付時間</td>
+              <td className={tdDescClass}>09:00-20:00</td>
+            </tr>
+            <tr className="">
+              <td className={tdAttrClass}>定休日</td>
+              <td className={tdDescClass}>土曜・日曜・祝日</td>
+            </tr>
+            <tr className="bg-gray-200">
+              <td className={tdAttrClass}>駐車場</td>
+              <td className={tdDescClass}>4台まで駐車可</td>
+            </tr>
+          </tbody>
         </table>
       </div>
 

@@ -13,38 +13,40 @@ const SeminarTable = ({ openDate }: SeminarTableProps) => {
 
   return (
     <table className="w-full text-base text-left border border-gray-300 table-auto md:text-lg">
-      <tr className="bg-gray-200">
-        <td className={tdAttrClass}>会場名</td>
-        <td className={tdDescClass}>〇〇ビル3F 〇〇会議室</td>
-      </tr>
-      <tr className="">
-        <td className={tdAttrClass}>開催場所</td>
-        <td className={tdDescClass}>
-          〒000-0000
-          <br />
-          大阪府大阪市〇〇〇〇1-1-1
-        </td>
-      </tr>
-      <tr className="bg-gray-200">
-        <td className={tdAttrClass}>開催日時</td>
-        <td className={tdDescClass}>{openDate} 18:00-20:00</td>
-      </tr>
-      <tr className="">
-        <td className={tdAttrClass}>受講料</td>
-        <td className={tdDescClass}>無料</td>
-      </tr>
-      <tr className="bg-gray-200">
-        <td className={tdAttrClass}>お申し込み番号</td>
-        <td className={tdDescClass}>000-000-0000</td>
-      </tr>
-      <tr className="">
-        <td className={tdAttrClass}>海上アクセス</td>
-        <td className={tdDescClass}>〇〇線〇〇駅より徒歩8分</td>
-      </tr>
-      <tr className="bg-gray-200">
-        <td className={tdAttrClass}>駐車場</td>
-        <td className={tdDescClass}>10台まで駐車可</td>
-      </tr>
+      <tbody>
+        <tr className="bg-gray-200">
+          <td className={tdAttrClass}>会場名</td>
+          <td className={tdDescClass}>〇〇ビル3F 〇〇会議室</td>
+        </tr>
+        <tr className="">
+          <td className={tdAttrClass}>開催場所</td>
+          <td className={tdDescClass}>
+            〒000-0000
+            <br />
+            大阪府大阪市〇〇〇〇1-1-1
+          </td>
+        </tr>
+        <tr className="bg-gray-200">
+          <td className={tdAttrClass}>開催日時</td>
+          <td className={tdDescClass}>{openDate} 18:00-20:00</td>
+        </tr>
+        <tr className="">
+          <td className={tdAttrClass}>受講料</td>
+          <td className={tdDescClass}>無料</td>
+        </tr>
+        <tr className="bg-gray-200">
+          <td className={tdAttrClass}>お申し込み番号</td>
+          <td className={tdDescClass}>000-000-0000</td>
+        </tr>
+        <tr className="">
+          <td className={tdAttrClass}>海上アクセス</td>
+          <td className={tdDescClass}>〇〇線〇〇駅より徒歩8分</td>
+        </tr>
+        <tr className="bg-gray-200">
+          <td className={tdAttrClass}>駐車場</td>
+          <td className={tdDescClass}>10台まで駐車可</td>
+        </tr>
+      </tbody>
     </table>
   )
 }

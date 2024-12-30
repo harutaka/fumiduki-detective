@@ -39,7 +39,7 @@ const SeminarTable = ({ openDate }: SeminarTableProps) => {
           <td className={tdDescClass}>000-000-0000</td>
         </tr>
         <tr className="">
-          <td className={tdAttrClass}>海上アクセス</td>
+          <td className={tdAttrClass}>アクセス</td>
           <td className={tdDescClass}>〇〇線〇〇駅より徒歩8分</td>
         </tr>
         <tr className="bg-gray-200">
@@ -56,8 +56,9 @@ type SeminarPageProps = {
   postDate: string
   openDate: string
   isFinished: boolean
+  detail: string
 }
-const SeminarPage = ({ title, postDate, openDate, isFinished }: SeminarPageProps) => {
+const SeminarPage = ({ title, postDate, openDate, isFinished, detail }: SeminarPageProps) => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
       <Header current="/seminar/xxx" />
@@ -100,9 +101,7 @@ const SeminarPage = ({ title, postDate, openDate, isFinished }: SeminarPageProps
             ""
           )}
 
-          <p className="my-8">
-            この文章はダミーテキストです。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
-          </p>
+          <p className="my-8">{detail}</p>
 
           {isFinished ? "" : <SeminarTable openDate={openDate} />}
 

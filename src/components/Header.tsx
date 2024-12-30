@@ -48,7 +48,7 @@ const Header = ({ current }: HeaderProps) => {
       {/* site-header-container */}
       <div className="px-4 mx-auto w-full max-w-6xl md:flex">
         <h1 className={`text-2xl whitespace-nowrap md:my-4 md:mr-8 md:w-full md:text-left ${scroll ? "hidden" : ""}`}>
-          <div className="max-h-16 text-center">
+          <div className="max-h-16 flex justify-center">
             <Link href="/">
               <Image src="/img/tanteilogo.png" alt="文月探偵事務所" width={250} height={60} />
             </Link>

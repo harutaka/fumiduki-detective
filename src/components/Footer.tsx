@@ -1,17 +1,21 @@
 import Image from "next/image"
 import Link from "next/link"
 
+import seminarInformation from "@/shared/seminarInformation"
+
 import tanteiLogo from "@/../public/img/tanteilogo.png"
 
 type SeminarItemProps = {
   href: string
   title: string
+  postDate: string
 }
-const SeminarItem = ({ href, title }: SeminarItemProps) => {
+const SeminarItem = ({ href, title, postDate }: SeminarItemProps) => {
   return (
     <div className="py-3 w-full text-sm border-b border-gray-200">
       <div className="mb-1 text-gray-600">
-        2021年7月27日<span className="inline-block px-1 mx-2 text-[10px] text-white bg-gray-600">Infomation</span>
+        {postDate}
+        <span className="inline-block px-1 mx-2 text-[10px] text-white bg-gray-600">Information</span>
       </div>
       <p>
         <Link href={href} className="hover:underline">
@@ -50,13 +54,13 @@ const Footer = () => {
             <div className="-mt-4 w-full border-b border-gray-300">
               <h4 className="inline-block py-2 text-lg font-bold border-b border-black">セミナー情報</h4>
             </div>
-            <SeminarItem href="/seminar/s01" title="「浮気の予防セミナー」実施のお知らせ" />
-            <SeminarItem href="/seminar/s02" title="個人でできる防犯対策" />
-            <SeminarItem href="/seminar/s03" title="探偵入門セミナー（終了）" />
+            {[...seminarInformation].reverse().map((item, i) => (
+              <SeminarItem key={i} href={item.href} title={item.title} postDate={item.postDate} />
+            ))}
           </div>
         </div>
 
-        <div className="pt-4 text-xs text-center">&copy; 2024 Harutaka</div>
+        <div className="pt-4 text-xs text-center">&copy; 2024 harutaka</div>
       </div>
     </footer>
   )

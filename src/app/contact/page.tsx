@@ -56,6 +56,7 @@ const Contact: NextPage = () => {
               </div>
 
               <button className="block py-2 px-8 text-white bg-blue-900 rounded">送信</button>
+              <p>※ このフォームはサンプルです。実際には送信されません。</p>
             </form>
           </div>
         </div>

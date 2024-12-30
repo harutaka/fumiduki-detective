@@ -19,7 +19,7 @@ const CtaBlock = () => {
             <p>受付時間: 9:00-20:00（土・日・祝日除く）</p>
           </div>
 
-          <Link href="/contanct">
+          <Link href="/contact">
             <button className="block py-3 w-full text-center text-white bg-amber-600 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

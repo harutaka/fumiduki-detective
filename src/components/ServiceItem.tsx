@@ -4,8 +4,9 @@ import H2title from "@/components/H2title"
 type ServiceItemProps = {
   title: string
   src: StaticImageData
+  detail: string
 }
-const ServiceItem = ({ title, src }: ServiceItemProps) => {
+const ServiceItem = ({ title, src, detail }: ServiceItemProps) => {
   return (
     <>
       <H2title title={title} />
@@ -13,17 +14,7 @@ const ServiceItem = ({ title, src }: ServiceItemProps) => {
         <Image src={src} alt={title} width={800} height={600} />
       </div>
 
-      <p className="mb-16">
-        この文章はダミーテキストです。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。
-        <br />
-        <br />
-        この文章はダミーテキストです。
-        吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。
-        <br />
-        <br />
-        この文章はダミーテキストです。この文章はダミーテキストです。
-        この文章はダミーテキストです。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。
-      </p>
+      <p className="mb-16">{detail}</p>
     </>
   )
 }

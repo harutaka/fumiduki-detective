@@ -1,9 +1,19 @@
 import type { NextPage } from "next"
 import SeminarPage from "@/components/SeminarPage"
 
+import seminarInformation from "@/shared/seminarInformation"
+
+const targetSeminar = seminarInformation[1]
+
 const S01: NextPage = () => {
   return (
-    <SeminarPage title="浮気の予防セミナー" postDate="2021年10月27日" openDate="2021年11月27日" isFinished={false} />
+    <SeminarPage
+      title={targetSeminar.title}
+      postDate={targetSeminar.postDate}
+      openDate={targetSeminar.openDate}
+      isFinished={targetSeminar.isFinished}
+      detail={targetSeminar.detail}
+    />
   )
 }
 

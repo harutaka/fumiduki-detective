@@ -3,9 +3,9 @@ import SeminarPage from "@/components/SeminarPage"
 
 import seminarInformation from "@/shared/seminarInformation"
 
-const targetSeminar = seminarInformation[2]
+const targetSeminar = seminarInformation[0]
 
-const S02: NextPage = () => {
+const S00: NextPage = () => {
   return (
     <SeminarPage
       title={targetSeminar.title}
@@ -16,4 +16,5 @@ const S02: NextPage = () => {
     />
   )
 }
-export default S02
+
+export default S00

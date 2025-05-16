@@ -73,7 +73,7 @@ const Home: NextPage = () => {
             ))}
           </section>
 
-          <CoverImage className="md:bg-img-intermiddle01" />
+          <CoverImage className="md:bg-[url('/img/intermiddle01.jpg')]" />
 
           <section className="my-16">
             <H2title title="調査内容" />
@@ -84,7 +84,7 @@ const Home: NextPage = () => {
             </div>
           </section>
 
-          <CoverImage className="md:bg-img-intermiddle02" />
+          <CoverImage className="md:bg-[url('/img/intermiddle02.jpg')]" />
 
           <section className="my-16">
             <H2title title="よくあるご質問" />

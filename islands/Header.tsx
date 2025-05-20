@@ -26,7 +26,7 @@ const Header: FunctionComponent<HeaderProps> = (props) => {
 
   return (
     // スクロールしたらnavを最上部固定する。ただしモバイルの場合は固定しない。
-    <header id="top" class={`z-10 w-full ${!open && scroll ? "fixed top-0 left-0 bg-white" : ""}`}>
+    <header class={`z-10 w-full ${!open && scroll ? "fixed top-0 left-0 bg-white" : ""}`}>
       {/* site-header-container */}
       <div class="px-4 mx-auto w-full max-w-6xl md:flex">
         <h1 class={`text-2xl whitespace-nowrap md:my-4 md:mr-8 md:w-full md:text-left ${scroll ? "hidden" : ""}`}>

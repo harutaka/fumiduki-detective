@@ -15,7 +15,9 @@ export default function App({ Component }: PageProps) {
         <meta property="og:image" content="https://fumiduki-detective.vercel.app/img/detective_overview.jpg" />
       </head>
       <body>
-        <Component />
+        <main id="top">
+          <Component />
+        </main>
       </body>
     </html>
   )

@@ -1,5 +1,5 @@
 import Header from "../islands/Header.tsx"
-import Slider from "../islands/Slider.tsx"
+import Slider from "../components/Slider.tsx"
 
 // import areaImg from "@/../public/img/area.jpg"
 // import kaikeiImg from "@/../public/img/kaikei.jpg"

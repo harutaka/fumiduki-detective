@@ -1,5 +1,5 @@
 import Header from "../islands/Header.tsx"
-import Slider from "../components/Slider.tsx"
+import Carousel from "../islands/Carousel.tsx"
 import Footer from "../components/Footer.tsx"
 
 import Feature from "../components/Feature.tsx"
@@ -18,7 +18,7 @@ const Index = () => {
   return (
     <div class="min-h-screen text-lg tracking-wider bg-gray-100">
       <Header current="/" />
-      <Slider />
+      <Carousel />
 
       <main class="relative py-4 px-4 md:px-14">
         {/* site-container */}

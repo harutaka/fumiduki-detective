@@ -1,6 +1,6 @@
 import { FunctionComponent } from "preact"
-import { useState, useEffect } from "preact/hooks"
-import { MenuIcon, CloseIcon } from "../components/Icons.tsx"
+import { useEffect, useState } from "preact/hooks"
+import { CloseIcon, MenuIcon } from "../components/Icons.tsx"
 
 type HeaderProps = {
   current: string
@@ -38,9 +38,7 @@ const Header: FunctionComponent<HeaderProps> = (props) => {
         </h1>
 
         <nav
-          class={`hidden sticky top-0 justify-end items-center md:flex md:w-min ${
-            scroll ? "md:block md:mx-auto" : ""
-          }`}
+          class={`hidden sticky top-0 justify-end items-center md:flex md:w-min ${scroll ? "md:block md:mx-auto" : ""}`}
         >
           <ul class={`flex relative mx-auto tracking-wider ${scroll ? "justify-center" : ""}`}>
             {menuArr.map((item, i) => (

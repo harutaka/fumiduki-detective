@@ -1,4 +1,3 @@
-
 import seminarInformation from "../shared/seminarInformation.ts"
 
 type SeminarItemProps = {

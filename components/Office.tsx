@@ -64,7 +64,8 @@ const Office = () => {
           title="Google Map of fumiduki detective agency"
           loading="lazy"
           class="w-full min-h-[450px]"
-        ></iframe>
+        >
+        </iframe>
       </div>
     </div>
   )

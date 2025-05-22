@@ -14,7 +14,7 @@
     "lineWidth": 120,
     "semiColons": false
   },
-  "exclude": ["**/_fresh/*", "node_modules", "old"],
+  "exclude": ["**/_fresh/*", "node_modules"],
   "imports": {
     "$fresh/": "https://deno.land/x/fresh@1.7.3/",
     "@pakornv/fresh-plugin-tailwindcss": "jsr:@pakornv/fresh-plugin-tailwindcss@^1.0.3",

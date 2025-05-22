@@ -11,8 +11,8 @@ export default function App({ Component }: PageProps) {
 
         <meta property="og:title" content="文月探偵事務所" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fumiduki-detective.vercel.app" />
-        <meta property="og:image" content="https://fumiduki-detective.vercel.app/img/detective_overview.jpg" />
+        <meta property="og:url" content="https://fumiduki-detective.deno.dev" />
+        <meta property="og:image" content="https://fumiduki-detective.deno.dev/detective_overview.jpg" />
       </head>
       <body>
         <main id="top">

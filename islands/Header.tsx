@@ -81,7 +81,7 @@ const Header: FunctionComponent<HeaderProps> = (props) => {
       <button
         type="button"
         onClick={() => setOpen((open) => !open)}
-        class="flex fixed top-1.5 left-1.5 z-20 justify-center items-center w-9 h-9 bg-white border border-black md:hidden"
+        class="flex fixed top-1.5 left-1.5 z-20 justify-center items-center w-9 h-9 bg-white border border-black md:hidden cursor-pointer"
       >
         {open ? <CloseIcon /> : <MenuIcon />}
       </button>

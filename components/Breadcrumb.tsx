@@ -21,13 +21,13 @@ const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
         <ul class="inline-block py-1.5">
           {breadcrumbArr.map((item, i) => (
             <li key={i} class={`inline`}>
-              {item.href ? (
-                <a href={item.href} class="after:mx-2 after:content-['/']">
-                  {item.title}
-                </a>
-              ) : (
-                <span>{item.title}</span>
-              )}
+              {item.href
+                ? (
+                  <a href={item.href} class="after:mx-2 after:content-['/']">
+                    {item.title}
+                  </a>
+                )
+                : <span>{item.title}</span>}
             </li>
           ))}
         </ul>

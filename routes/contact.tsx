@@ -51,7 +51,8 @@ const Contact = () => {
                   id="message"
                   class="py-2 px-4 mt-1 w-full rounded border border-gray-300"
                   rows={5}
-                ></textarea>
+                >
+                </textarea>
               </div>
 
               <button type="button" class="block py-2 px-8 text-white bg-blue-900 rounded">送信</button>

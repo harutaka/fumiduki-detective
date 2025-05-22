@@ -12,7 +12,7 @@ const SearchItem = ({ title, src, detail }: SearchItemProps) => {
       <a href="/service">
         <button
           type="button"
-          class="py-2 mb-8 w-2/3 text-amber-600 rounded border border-amber-600 hover:ring-2 hover:ring-blue-100"
+          class="py-2 mb-8 w-2/3 text-amber-600 rounded border cursor-pointer border-amber-600 hover:ring-2 hover:ring-blue-100"
         >
           詳細はこちら
           <svg

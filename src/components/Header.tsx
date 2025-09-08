@@ -99,6 +99,7 @@ const Header = ({ current }: HeaderProps) => {
       </Link>
       {/* モバイルの場合は左上にメニューアイコン固定 */}
       <button
+        type="button"
         onClick={() => setOpen((open) => !open)}
         className="flex fixed top-1.5 left-1.5 z-20 justify-center items-center w-9 h-9 bg-white border border-black md:hidden"
       >

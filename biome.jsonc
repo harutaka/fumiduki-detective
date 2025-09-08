@@ -18,9 +18,7 @@
 		"rules": {
 			"recommended": true,
 			"a11y": {
-				"noSvgWithoutTitle": "off",
-				"useButtonType": "off",
-				"useValidAriaRole": "off"
+				"noSvgWithoutTitle": "off"
 			},
 			"suspicious": {
 				"noArrayIndexKey": "off"

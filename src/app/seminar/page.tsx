@@ -33,7 +33,9 @@ const SeminarItem = ({ title, date, src, href, detail }: SeminarItemProps) => {
         <p className="py-4 text-gray-700 md:mb-12">{detail}</p>
 
         <Link href={href}>
-          <button className="right-0 bottom-0 py-2 px-8 text-white bg-blue-900 rounded md:absolute">続きを読む</button>
+          <button type="button" className="right-0 bottom-0 py-2 px-8 text-white bg-blue-900 rounded md:absolute">
+            続きを読む
+          </button>
         </Link>
       </div>
     </div>

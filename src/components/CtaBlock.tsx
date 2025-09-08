@@ -20,7 +20,7 @@ const CtaBlock = () => {
           </div>
 
           <Link href="/contact">
-            <button className="block py-3 w-full text-center text-white bg-amber-600 rounded">
+            <button type="button" className="block py-3 w-full text-center text-white bg-amber-600 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="inline-block mr-2 w-6 h-6"

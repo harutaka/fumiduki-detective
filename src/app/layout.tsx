@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "文月探偵事務所",
     url: "https://fumiduki-detective.vercel.app",
     description: "当事務所は浮気調査や素行調査などの調査サービスを提供します。",
-    images: [{ url: "https://fumiduki-detective.vercel.app/img/detective_overview.jpg" }],
+    images: [{ url: "https://fumiduki-detective.vercel.app/detective_overview.jpg" }],
   },
   twitter: {
     card: "summary_large_image",

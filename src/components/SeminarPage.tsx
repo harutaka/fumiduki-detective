@@ -1,15 +1,15 @@
-import CtaBlock from "./CtaBlock"
-import Breadcrumb from "@/components/Breadcrumb"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
+import CtaBlock from "./CtaBlock";
 
 type SeminarTableProps = {
-  openDate: string
-}
+  openDate: string;
+};
 const SeminarTable = ({ openDate }: SeminarTableProps) => {
-  const tdAttrClass = "py-3 px-4 font-bold"
-  const tdDescClass = "py-3 px-4"
+  const tdAttrClass = "py-3 px-4 font-bold";
+  const tdDescClass = "py-3 px-4";
 
   return (
     <table className="w-full text-base text-left border border-gray-300 table-auto md:text-lg">
@@ -48,16 +48,16 @@ const SeminarTable = ({ openDate }: SeminarTableProps) => {
         </tr>
       </tbody>
     </table>
-  )
-}
+  );
+};
 
 type SeminarPageProps = {
-  title: string
-  postDate: string
-  openDate: string
-  isFinished: boolean
-  detail: string
-}
+  title: string;
+  postDate: string;
+  openDate: string;
+  isFinished: boolean;
+  detail: string;
+};
 const SeminarPage = ({ title, postDate, openDate, isFinished, detail }: SeminarPageProps) => {
   return (
     <div className="min-h-screen text-lg tracking-wider bg-gray-100">
@@ -111,7 +111,7 @@ const SeminarPage = ({ title, postDate, openDate, isFinished, detail }: SeminarP
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default SeminarPage
+export default SeminarPage;

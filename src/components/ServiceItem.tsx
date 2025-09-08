@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image"
-import H2title from "@/components/H2title"
+import Image, { type StaticImageData } from "next/image";
+import H2title from "@/components/H2title";
 
 type ServiceItemProps = {
-  title: string
-  src: StaticImageData
-  detail: string
-}
+  title: string;
+  src: StaticImageData;
+  detail: string;
+};
 const ServiceItem = ({ title, src, detail }: ServiceItemProps) => {
   return (
     <>
@@ -16,7 +16,7 @@ const ServiceItem = ({ title, src, detail }: ServiceItemProps) => {
 
       <p className="mb-16">{detail}</p>
     </>
-  )
-}
+  );
+};
 
-export default ServiceItem
+export default ServiceItem;

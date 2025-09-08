@@ -1,12 +1,12 @@
-"use client"
+"use client";
 
-import { Navigation, Pagination, A11y } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
-import Image from "next/image"
+import Image from "next/image";
+import { A11y, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Slider = () => {
   const slideImgArr = [
@@ -18,7 +18,7 @@ const Slider = () => {
       message: "問題やトラブルの解決に向け",
       message2: "全力でサポートいたします。",
     },
-  ]
+  ];
 
   return (
     <>
@@ -44,11 +44,11 @@ const Slider = () => {
                 </div>
               </div>
             </SwiperSlide>
-          )
+          );
         })}
       </Swiper>
     </>
-  )
-}
+  );
+};
 
-export default Slider
+export default Slider;

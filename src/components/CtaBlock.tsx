@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import otoiawaseImg from "@/../public/img/otoiawase.jpg"
+import otoiawaseImg from "@/../public/img/otoiawase.jpg";
 
 const CtaBlock = () => {
   return (
@@ -20,7 +20,7 @@ const CtaBlock = () => {
           </div>
 
           <Link href="/contact">
-            <button className="block py-3 w-full text-center text-white bg-amber-600 rounded">
+            <button type="button" className="block py-3 w-full text-center text-white bg-amber-600 rounded">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="inline-block mr-2 w-6 h-6"
@@ -41,7 +41,7 @@ const CtaBlock = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CtaBlock
+export default CtaBlock;

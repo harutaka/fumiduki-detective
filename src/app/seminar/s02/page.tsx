@@ -1,9 +1,9 @@
-import type { NextPage } from "next"
-import SeminarPage from "@/components/SeminarPage"
+import type { NextPage } from "next";
+import SeminarPage from "@/components/SeminarPage";
 
-import seminarInformation from "@/shared/seminarInformation"
+import seminarInformation from "@/shared/seminarInformation";
 
-const targetSeminar = seminarInformation[2]
+const targetSeminar = seminarInformation[2];
 
 const S02: NextPage = () => {
   return (
@@ -14,6 +14,6 @@ const S02: NextPage = () => {
       isFinished={targetSeminar.isFinished}
       detail={targetSeminar.detail}
     />
-  )
-}
-export default S02
+  );
+};
+export default S02;

@@ -1,13 +1,13 @@
-import type { NextPage } from "next"
-import Breadcrumb from "@/components/Breadcrumb"
-import CheckListItem from "@/components/CheckListItem"
-import CtaBlock from "@/components/CtaBlock"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
-import ServiceItem from "@/components/ServiceItem"
+import type { NextPage } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import CheckListItem from "@/components/CheckListItem";
+import CtaBlock from "@/components/CtaBlock";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
+import ServiceItem from "@/components/ServiceItem";
 
-import availableServices from "@/shared/availableServices"
+import availableServices from "@/shared/availableServices";
 
 const Service: NextPage = () => {
   return (
@@ -36,7 +36,7 @@ const Service: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

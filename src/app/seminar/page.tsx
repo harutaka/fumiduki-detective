@@ -1,20 +1,20 @@
-import type { NextPage } from "next"
-import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
-import Breadcrumb from "@/components/Breadcrumb"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
+import type { NextPage } from "next";
+import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
 
-import seminarInformation from "@/shared/seminarInformation"
+import seminarInformation from "@/shared/seminarInformation";
 
 type SeminarItemProps = {
-  title: string
-  date: string
-  src: StaticImageData
-  href: string
-  detail: string
-}
+  title: string;
+  date: string;
+  src: StaticImageData;
+  href: string;
+  detail: string;
+};
 const SeminarItem = ({ title, date, src, href, detail }: SeminarItemProps) => {
   return (
     <div className="py-8 space-x-8 border-b border-gray-200 md:flex">
@@ -33,12 +33,14 @@ const SeminarItem = ({ title, date, src, href, detail }: SeminarItemProps) => {
         <p className="py-4 text-gray-700 md:mb-12">{detail}</p>
 
         <Link href={href}>
-          <button className="right-0 bottom-0 py-2 px-8 text-white bg-blue-900 rounded md:absolute">続きを読む</button>
+          <button type="button" className="right-0 bottom-0 py-2 px-8 text-white bg-blue-900 rounded md:absolute">
+            続きを読む
+          </button>
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const Seminar: NextPage = () => {
   return (
@@ -66,7 +68,7 @@ const Seminar: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Seminar
+export default Seminar;

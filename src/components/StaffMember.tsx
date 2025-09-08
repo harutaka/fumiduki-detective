@@ -1,12 +1,12 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { type StaticImageData } from "next/image";
 
 type StaffMemberProps = {
-  name: string
-  src: StaticImageData
-  role: string
-  detail: string
-}
-const StaffMember = ({ name, src, role, detail }: StaffMemberProps) => {
+  name: string;
+  src: StaticImageData;
+  roleName: string;
+  detail: string;
+};
+const StaffMember = ({ name, src, roleName, detail }: StaffMemberProps) => {
   return (
     <div className="my-8 md:flex md:space-x-12">
       <div className="md:w-1/3">
@@ -17,14 +17,14 @@ const StaffMember = ({ name, src, role, detail }: StaffMemberProps) => {
 
       <div className="md:w-2/3">
         <h3 className="pt-4 font-serif text-3xl font-bold text-blue-800 md:pt-0 md:text-5xl">{name}</h3>
-        <p className="my-2 text-sm">{role}</p>
+        <p className="my-2 text-sm">{roleName}</p>
 
         <hr className="my-4 border-gray-300" />
 
         <p className="">{detail}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StaffMember
+export default StaffMember;

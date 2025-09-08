@@ -1,9 +1,9 @@
-import uwakiImg from "@/../public/img/uwaki.jpg"
-import weddingImg from "@/../public/img/wedding.jpg"
-import sokoImg from "@/../public/img/soko.jpg"
-import ijimeImg from "@/../public/img/ijime.jpg"
-import sutokaImg from "@/../public/img/sutoka.jpg"
-import pettoImg from "@/../public/img/petto.jpg"
+import ijimeImg from "@/../public/img/ijime.jpg";
+import pettoImg from "@/../public/img/petto.jpg";
+import sokoImg from "@/../public/img/soko.jpg";
+import sutokaImg from "@/../public/img/sutoka.jpg";
+import uwakiImg from "@/../public/img/uwaki.jpg";
+import weddingImg from "@/../public/img/wedding.jpg";
 
 const availableServices = [
   {
@@ -73,6 +73,6 @@ const availableServices = [
     detail:
       "大切な家族であるペットが行方不明に。地域の特性を熟知した調査員が、綿密な捜索活動を展開。SNSやポスター掲示など、効果的な手段を駆使してペット発見をサポートします。",
   },
-]
+];
 
-export default availableServices
+export default availableServices;

@@ -1,9 +1,9 @@
-import type { NextPage } from "next"
-import Breadcrumb from "@/components/Breadcrumb"
-import Footer from "@/components/Footer"
-import H2title from "@/components/H2title"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
+import type { NextPage } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
+import H2title from "@/components/H2title";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
 
 const Policy: NextPage = () => {
   return (
@@ -63,7 +63,7 @@ const Policy: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Policy
+export default Policy;

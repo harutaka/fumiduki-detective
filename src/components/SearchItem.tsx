@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
+import Image, { type StaticImageData } from "next/image";
+import Link from "next/link";
 
 type SearchItemProps = {
-  title: string
-  src: StaticImageData
-  detail: string
-}
+  title: string;
+  src: StaticImageData;
+  detail: string;
+};
 const SearchItem = ({ title, src, detail }: SearchItemProps) => {
   return (
     <div className="w-full text-center">
@@ -13,7 +13,10 @@ const SearchItem = ({ title, src, detail }: SearchItemProps) => {
       <h3 className="py-2 mt-8 w-full text-2xl font-bold text-center bg-gray-200">{title}</h3>
       <p className="my-4 text-left">{detail}</p>
       <Link href="/service">
-        <button className="py-2 mb-8 w-2/3 text-amber-600 rounded border border-amber-600 hover:ring-2 hover:ring-blue-100">
+        <button
+          type="button"
+          className="py-2 mb-8 w-2/3 text-amber-600 rounded border border-amber-600 hover:ring-2 hover:ring-blue-100"
+        >
           詳細はこちら
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +33,7 @@ const SearchItem = ({ title, src, detail }: SearchItemProps) => {
         </button>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default SearchItem
+export default SearchItem;

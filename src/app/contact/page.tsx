@@ -1,9 +1,9 @@
-import type { NextPage } from "next"
-import Breadcrumb from "@/components/Breadcrumb"
-import Footer from "@/components/Footer"
-import H2title from "@/components/H2title"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
+import type { NextPage } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
+import H2title from "@/components/H2title";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
 
 const Contact: NextPage = () => {
   return (
@@ -55,7 +55,9 @@ const Contact: NextPage = () => {
                 ></textarea>
               </div>
 
-              <button className="block py-2 px-8 text-white bg-blue-900 rounded">送信</button>
+              <button type="button" className="block py-2 px-8 text-white bg-blue-900 rounded">
+                送信
+              </button>
               <p>※ このフォームはサンプルです。実際には送信されません。</p>
             </form>
           </div>
@@ -64,7 +66,7 @@ const Contact: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

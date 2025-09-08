@@ -1,14 +1,14 @@
-import Link from "next/link"
+import Link from "next/link";
 
 type BreadcrumbItem = {
-  title: string
-  href: string
-}
+  title: string;
+  href: string;
+};
 type BreadcrumbProps = {
-  breadcrumb: BreadcrumbItem[]
-}
+  breadcrumb: BreadcrumbItem[];
+};
 const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
-  const breadcrumbArr = [{ title: "トップ", href: "/" }, ...breadcrumb]
+  const breadcrumbArr = [{ title: "トップ", href: "/" }, ...breadcrumb];
   return (
     <div className={`text-xs border-b border-gray-300`}>
       <div className="flex items-center px-4 mx-auto w-full max-w-6xl">
@@ -35,7 +35,7 @@ const Breadcrumb = ({ breadcrumb }: BreadcrumbProps) => {
         </ul>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Breadcrumb
+export default Breadcrumb;

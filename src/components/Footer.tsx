@@ -1,15 +1,13 @@
-import Image from "next/image"
-import Link from "next/link"
-
-import seminarInformation from "@/shared/seminarInformation"
-
-import tanteiLogo from "@/../public/img/tanteilogo.png"
+import Image from "next/image";
+import Link from "next/link";
+import tanteiLogo from "@/../public/img/tanteilogo.png";
+import seminarInformation from "@/shared/seminarInformation";
 
 type SeminarItemProps = {
-  href: string
-  title: string
-  postDate: string
-}
+  href: string;
+  title: string;
+  postDate: string;
+};
 const SeminarItem = ({ href, title, postDate }: SeminarItemProps) => {
   return (
     <div className="py-3 w-full text-sm border-b border-gray-200">
@@ -23,8 +21,8 @@ const SeminarItem = ({ href, title, postDate }: SeminarItemProps) => {
         </Link>
       </p>
     </div>
-  )
-}
+  );
+};
 
 const Footer = () => {
   return (
@@ -63,7 +61,7 @@ const Footer = () => {
         <div className="pt-4 text-xs text-center">&copy; 2024 harutaka</div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

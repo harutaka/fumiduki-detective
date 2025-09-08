@@ -1,9 +1,9 @@
+import ijimeImg from "@/../public/img/ijime.jpg";
+import pettoImg from "@/../public/img/petto.jpg";
+import sokoImg from "@/../public/img/soko.jpg";
+import sutokaImg from "@/../public/img/sutoka.jpg";
 import uwakiImg from "@/../public/img/uwaki.jpg";
 import weddingImg from "@/../public/img/wedding.jpg";
-import sokoImg from "@/../public/img/soko.jpg";
-import ijimeImg from "@/../public/img/ijime.jpg";
-import sutokaImg from "@/../public/img/sutoka.jpg";
-import pettoImg from "@/../public/img/petto.jpg";
 
 const availableServices = [
   {

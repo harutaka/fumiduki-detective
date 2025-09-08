@@ -2,10 +2,10 @@ import type { NextPage } from "next";
 import Breadcrumb from "@/components/Breadcrumb";
 import CheckListItem from "@/components/CheckListItem";
 import CtaBlock from "@/components/CtaBlock";
+import FeeItem from "@/components/FeeItem";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageHeader from "@/components/PageHeader";
-import FeeItem from "@/components/FeeItem";
 
 import availableServices from "@/shared/availableServices";
 

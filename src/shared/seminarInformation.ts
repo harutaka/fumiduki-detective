@@ -1,6 +1,6 @@
-import seminar00Img from "@/../public/img/yusuke02.jpg";
-import seminar01Img from "@/../public/img/rina06.jpg";
 import seminar02Img from "@/../public/img/hide02.jpg";
+import seminar01Img from "@/../public/img/rina06.jpg";
+import seminar00Img from "@/../public/img/yusuke02.jpg";
 
 const seminarInformation = [
   {

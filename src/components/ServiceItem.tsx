@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image, { type StaticImageData } from "next/image";
 import H2title from "@/components/H2title";
 
 type ServiceItemProps = {

@@ -1,8 +1,8 @@
-import CtaBlock from "./CtaBlock";
 import Breadcrumb from "@/components/Breadcrumb";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageHeader from "@/components/PageHeader";
+import CtaBlock from "./CtaBlock";
 
 type SeminarTableProps = {
   openDate: string;

@@ -1,14 +1,13 @@
 import type { NextPage } from "next";
+import hideImg from "@/../public/img/hide01.jpg";
+import rinaImg from "@/../public/img/rina05.jpg";
+import yusukeImg from "@/../public/img/yusuke01.jpg";
 import Breadcrumb from "@/components/Breadcrumb";
 import CtaBlock from "@/components/CtaBlock";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageHeader from "@/components/PageHeader";
 import StaffMember from "@/components/StaffMember";
-
-import hideImg from "@/../public/img/hide01.jpg";
-import yusukeImg from "@/../public/img/yusuke01.jpg";
-import rinaImg from "@/../public/img/rina05.jpg";
 
 const Staff: NextPage = () => {
   return (

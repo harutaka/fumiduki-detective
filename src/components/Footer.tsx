@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-
-import seminarInformation from "@/shared/seminarInformation";
-
 import tanteiLogo from "@/../public/img/tanteilogo.png";
+import seminarInformation from "@/shared/seminarInformation";
 
 type SeminarItemProps = {
   href: string;

@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
+import Breadcrumb from "@/components/Breadcrumb";
+import CtaBlock from "@/components/CtaBlock";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import PageHeader from "@/components/PageHeader";
-import Breadcrumb from "@/components/Breadcrumb";
-import Footer from "@/components/Footer";
-import CtaBlock from "@/components/CtaBlock";
 
 import topicInformation from "@/shared/topicInformation";
 

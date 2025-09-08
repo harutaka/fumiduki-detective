@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
+import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 type SearchItemProps = {
-  title: string
-  src: StaticImageData
-  detail: string
-}
+  title: string;
+  src: StaticImageData;
+  detail: string;
+};
 const SearchItem = ({ title, src, detail }: SearchItemProps) => {
   return (
     <div className="w-full text-center">
@@ -30,7 +30,7 @@ const SearchItem = ({ title, src, detail }: SearchItemProps) => {
         </button>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default SearchItem
+export default SearchItem;

@@ -1,6 +1,6 @@
-import seminar00Img from "@/../public/img/yusuke02.jpg"
-import seminar01Img from "@/../public/img/rina06.jpg"
-import seminar02Img from "@/../public/img/hide02.jpg"
+import seminar00Img from "@/../public/img/yusuke02.jpg";
+import seminar01Img from "@/../public/img/rina06.jpg";
+import seminar02Img from "@/../public/img/hide02.jpg";
 
 const seminarInformation = [
   {
@@ -33,6 +33,6 @@ const seminarInformation = [
     detail:
       "健全な関係を築くためのコミュニケーション術を中心に、浮気の兆候や対処法を解説。探偵の視点から見た浮気の実態と、信頼関係を深めるためのアドバイスを提供します。パートナーとの絆を強めたい方におすすめの内容です。",
   },
-]
+];
 
-export default seminarInformation
+export default seminarInformation;

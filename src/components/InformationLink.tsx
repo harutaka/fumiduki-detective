@@ -1,9 +1,9 @@
-import Link from "next/link"
+import Link from "next/link";
 
 type InfomationLinkProps = {
-  href: string
-  title: string
-}
+  href: string;
+  title: string;
+};
 const InfomationLink = ({ href, title }: InfomationLinkProps) => {
   return (
     <div className="py-4 w-full border-b border-gray-300">
@@ -11,7 +11,7 @@ const InfomationLink = ({ href, title }: InfomationLinkProps) => {
         {title}
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default InfomationLink
+export default InfomationLink;

@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
+import Image from "next/image";
+import Link from "next/link";
 
-import otoiawaseImg from "@/../public/img/otoiawase.jpg"
+import otoiawaseImg from "@/../public/img/otoiawase.jpg";
 
 const CtaBlock = () => {
   return (
@@ -41,7 +41,7 @@ const CtaBlock = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CtaBlock
+export default CtaBlock;

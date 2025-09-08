@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image";
 
 type FeatureProps = {
-  title: string
-  src: StaticImageData
-  reverse: boolean
-  detail: string
-}
+  title: string;
+  src: StaticImageData;
+  reverse: boolean;
+  detail: string;
+};
 const Feature = ({ title, src, reverse, detail }: FeatureProps) => {
   return (
     <div className={`md:flex mb-8 ${reverse ? "flex-row-reverse" : ""}`}>
@@ -18,7 +18,7 @@ const Feature = ({ title, src, reverse, detail }: FeatureProps) => {
         <p>{detail}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Feature
+export default Feature;

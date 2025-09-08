@@ -1,13 +1,13 @@
-import type { NextPage } from "next"
-import Header from "@/components/Header"
-import PageHeader from "@/components/PageHeader"
-import Breadcrumb from "@/components/Breadcrumb"
-import Footer from "@/components/Footer"
-import CtaBlock from "@/components/CtaBlock"
+import type { NextPage } from "next";
+import Header from "@/components/Header";
+import PageHeader from "@/components/PageHeader";
+import Breadcrumb from "@/components/Breadcrumb";
+import Footer from "@/components/Footer";
+import CtaBlock from "@/components/CtaBlock";
 
-import topicInformation from "@/shared/topicInformation"
+import topicInformation from "@/shared/topicInformation";
 
-const targetTopic = topicInformation[1]
+const targetTopic = topicInformation[1];
 
 const I01: NextPage = () => {
   return (
@@ -46,7 +46,7 @@ const I01: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default I01
+export default I01;

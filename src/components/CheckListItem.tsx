@@ -1,6 +1,6 @@
 type CheckListItemProps = {
-  name: string
-}
+  name: string;
+};
 const CheckListItem = ({ name }: CheckListItemProps) => {
   return (
     <li className="flex items-center my-2">
@@ -18,7 +18,7 @@ const CheckListItem = ({ name }: CheckListItemProps) => {
       </svg>
       {name}
     </li>
-  )
-}
+  );
+};
 
-export default CheckListItem
+export default CheckListItem;

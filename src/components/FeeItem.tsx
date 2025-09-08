@@ -1,15 +1,15 @@
-import H2title from "@/components/H2title"
+import H2title from "@/components/H2title";
 
 type FeeItemProps = {
-  title: string
+  title: string;
   fee: {
-    attr: string
-    value: string
-  }[]
-}
+    attr: string;
+    value: string;
+  }[];
+};
 const FeeItem = ({ title, fee }: FeeItemProps) => {
-  const tdAttrClass = "py-3 px-4 font-bold"
-  const tdDescClass = "py-3 px-4 text-sm"
+  const tdAttrClass = "py-3 px-4 font-bold";
+  const tdDescClass = "py-3 px-4 text-sm";
 
   return (
     <div className="my-16">
@@ -26,7 +26,7 @@ const FeeItem = ({ title, fee }: FeeItemProps) => {
         </tbody>
       </table>
     </div>
-  )
-}
+  );
+};
 
-export default FeeItem
+export default FeeItem;

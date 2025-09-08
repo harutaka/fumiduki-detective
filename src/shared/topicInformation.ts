@@ -18,6 +18,6 @@ const topicInformation = [
     postDate: "2024年10月27日",
     detail: "",
   },
-]
+];
 
-export default topicInformation
+export default topicInformation;

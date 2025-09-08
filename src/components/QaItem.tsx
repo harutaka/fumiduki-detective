@@ -1,7 +1,7 @@
 type QaItemProps = {
-  title: string
-  detail: string
-}
+  title: string;
+  detail: string;
+};
 const QaItem = ({ title, detail }: QaItemProps) => {
   return (
     <>
@@ -22,7 +22,7 @@ const QaItem = ({ title, detail }: QaItemProps) => {
         </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default QaItem
+export default QaItem;

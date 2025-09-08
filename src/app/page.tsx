@@ -1,22 +1,22 @@
-import type { NextPage } from "next"
-import CoverImage from "@/components/CoverImage"
-import CtaBlock from "@/components/CtaBlock"
-import Feature from "@/components/Feature"
-import Footer from "@/components/Footer"
-import H2title from "@/components/H2title"
-import Header from "@/components/Header"
-import InformationLink from "@/components/InformationLink"
-import Office from "@/components/Office"
-import QaItem from "@/components/QaItem"
-import SearchItem from "@/components/SearchItem"
-import Slider from "@/components/Slider"
+import type { NextPage } from "next";
+import CoverImage from "@/components/CoverImage";
+import CtaBlock from "@/components/CtaBlock";
+import Feature from "@/components/Feature";
+import Footer from "@/components/Footer";
+import H2title from "@/components/H2title";
+import Header from "@/components/Header";
+import InformationLink from "@/components/InformationLink";
+import Office from "@/components/Office";
+import QaItem from "@/components/QaItem";
+import SearchItem from "@/components/SearchItem";
+import Slider from "@/components/Slider";
 
-import availableServices from "@/shared/availableServices"
-import topicInformation from "@/shared/topicInformation"
+import availableServices from "@/shared/availableServices";
+import topicInformation from "@/shared/topicInformation";
 
-import areaImg from "@/../public/img/area.jpg"
-import kaikeiImg from "@/../public/img/kaikei.jpg"
-import akusyuImg from "@/../public/img/akusyu.jpg"
+import areaImg from "@/../public/img/area.jpg";
+import kaikeiImg from "@/../public/img/kaikei.jpg";
+import akusyuImg from "@/../public/img/akusyu.jpg";
 
 const Home: NextPage = () => {
   return (
@@ -121,7 +121,7 @@ const Home: NextPage = () => {
 
       <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

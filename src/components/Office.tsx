@@ -1,10 +1,10 @@
-import Image from "next/image"
+import Image from "next/image";
 
-import honsyaImg from "@/../public/img/honsya.jpg"
+import honsyaImg from "@/../public/img/honsya.jpg";
 
 const Office = () => {
-  const tdAttrClass = "py-3 px-4 font-bold"
-  const tdDescClass = "py-3 px-4 text-sm"
+  const tdAttrClass = "py-3 px-4 font-bold";
+  const tdDescClass = "py-3 px-4 text-sm";
   return (
     <div className="w-full">
       <div className="my-16 w-full flex justify-center">
@@ -71,7 +71,7 @@ const Office = () => {
         ></iframe>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Office
+export default Office;

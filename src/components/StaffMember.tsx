@@ -1,11 +1,11 @@
-import Image, { StaticImageData } from "next/image"
+import Image, { StaticImageData } from "next/image";
 
 type StaffMemberProps = {
-  name: string
-  src: StaticImageData
-  role: string
-  detail: string
-}
+  name: string;
+  src: StaticImageData;
+  role: string;
+  detail: string;
+};
 const StaffMember = ({ name, src, role, detail }: StaffMemberProps) => {
   return (
     <div className="my-8 md:flex md:space-x-12">
@@ -24,7 +24,7 @@ const StaffMember = ({ name, src, role, detail }: StaffMemberProps) => {
         <p className="">{detail}</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default StaffMember
+export default StaffMember;

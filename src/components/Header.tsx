@@ -1,32 +1,32 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Link from "next/link"
-import { useState, useEffect } from "react"
+import Image from "next/image";
+import Link from "next/link";
+import { useState, useEffect } from "react";
 
 const menuIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
     </svg>
-  )
-}
+  );
+};
 
 const closeIcon = () => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
     </svg>
-  )
-}
+  );
+};
 
 type HeaderProps = {
-  current: string
-}
+  current: string;
+};
 const Header = ({ current }: HeaderProps) => {
   // ページ最上部判定。最上部ならtrue、少しでもスクロールすればfalse
-  const [scroll, setScroll] = useState(false)
-  const [open, setOpen] = useState(false)
+  const [scroll, setScroll] = useState(false);
+  const [open, setOpen] = useState(false);
   const menuArr = [
     { href: "/", title: "トップ" },
     { href: "/service", title: "業務内容" },
@@ -34,13 +34,13 @@ const Header = ({ current }: HeaderProps) => {
     { href: "/staff", title: "スタッフ紹介" },
     { href: "/seminar", title: "セミナー情報" },
     { href: "/contact", title: "お問い合わせ" },
-  ]
+  ];
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 1)
-    })
-  }, [])
+      setScroll(window.scrollY > 1);
+    });
+  }, []);
 
   return (
     // スクロールしたらnavを最上部固定する。ただしモバイルの場合は固定しない。
@@ -123,7 +123,7 @@ const Header = ({ current }: HeaderProps) => {
         </nav>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

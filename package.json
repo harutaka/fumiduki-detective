@@ -1,6 +1,6 @@
 {
   "name": "fumiduki-detective",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
